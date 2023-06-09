@@ -169,12 +169,12 @@ def prediction_page():
             submit_button = st.form_submit_button("Submit")
 
             if submit_button:
-                test = pd.read_csv('C:\\Users\\User\\PycharmProjects\\IDSAssignment\\venv\\mental_health_in_tech-main\\output.csv')
+                test = pd.read_csv('output.csv')
                 test = test.loc[:, test.columns != 'Seek_Treatment']
                 test.loc[len(test)] = df.loc[0]
 
-                model = joblib.load('C:\\Users\\User\\PycharmProjects\\IDSAssignment\\venv\\mental_health_in_tech-main\\model1.pkl')
-                scaler = joblib.load('C:\\Users\\User\\PycharmProjects\\IDSAssignment\\venv\\mental_health_in_tech-main\\scaler1.pkl')
+                model = joblib.load('rf_model.pkl')
+                scaler = joblib.load('scaler1.pkl')
 
                 for column in test.columns:
                     if column == 'Age' or column == 'Seek_Treatment':
