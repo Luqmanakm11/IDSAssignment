@@ -60,7 +60,7 @@ def home_page():
             unsafe_allow_html=True)
 
         # Adding the first image with transition effect
-        image_url1 = 'https://64.media.tumblr.com/fdc71827a4097a6fa3c980d7eb9d67da/866f6b593c84ef90-44/s2048x3072/cbcf6bab14cc29798098a2e728953dda6fdeb726.pnj'
+        image_url1 = 'https://64.media.tumblr.com/504194d75f8a2a2e66ccec48410b9c8e/184fada633637efa-a3/s640x960/0e7cbf54834b5e7e5d59058c8e78dbd53aadc829.pnj'
         st.markdown(
             f'<div style="display: flex; justify-content: center;"><div class="image-transition"><img src="{image_url1}" alt="Image normal brain and Alzheimer" style="max-width: 700px;"></div></div>',
             unsafe_allow_html=True)
@@ -73,7 +73,7 @@ def home_page():
             st.image(image_url2, caption='')
 
         # Adding the third image in an expander
-        with st.expander("Symptoms of Alzheimer"):
+        with st.expander("Symptoms of Mental Health"):
             image_url3 = 'https://64.media.tumblr.com/350fbdc722bf2548daccf0ac43e14aa3/2613e0dcfd360416-d7/s2048x3072/61bffa955936a27760b29a5ba21d307109847bec.pnj'
             st.image(image_url3, caption='')
 
@@ -288,11 +288,11 @@ def aboutus_page():
         unsafe_allow_html=True,
     )
 
-    st.markdown('<div class="centered"><h1>Get To Know the Masterminds</h1></div>', unsafe_allow_html=True)
+    st.markdown('<div class="center"><h1>Get To Know the Masterminds</h1></div>', unsafe_allow_html=True)
     # Adding the first image
     image_url1 = 'https://64.media.tumblr.com/850c77a6bfc13ebc3131c08a5fdc9c76/4f3fd61635fc6764-11/s640x960/bffe6ac496b5fcb88333128d30ff4ebd6dbf8ebc.pnj'
     st.markdown(
-        f'<div style="display: flex; justify-content: center;"><div class="image-transition"><img src="{image_url1}" alt="" style="max-width: 700px;"></div></div>',
+        f'<div style="display: flex; justify-content: center;"><div class="image-transition"><img src="{image_url1}" alt="" style="max-width: 950px;"></div></div>',
         unsafe_allow_html=True)
 
     st.header("", anchor="center")
